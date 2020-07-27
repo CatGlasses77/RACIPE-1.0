@@ -53,6 +53,7 @@ Use "./RACIPE -h" to find all available options.
 
 -h             : Show all available options.
 -maxtime       : Maximum time for the simulation (Default 23.5 h).
+-threads       : Number of threads to be created (Default 3).
 -solver        : The integrator method (1 --> Euler or 2 --> RK45) to solve the ODEs equations (Default 1).
 -flag          : run RACIPE to produce the .cfg file only or the whole simulation (Default 0, perform the whole simulation).
 

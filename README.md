@@ -33,6 +33,7 @@ Use "`./RACIPE -h`" to find all available options.<br />
 
 **-h**													: Show all available options.<br />
 **-maxtime**       : Maximum time f-maor the simulation (Default 23.5 h).<br />
+**-threads**       : Number of threads to be created (Default 3).<br />
 **-flag**          : Only produce .cfg file or not (Default 0, not only produce .cfg file).<br /><br />
 **-KDID**          : Gene or link (See their ID in .cfg file) to be knocked down. <br />
 **-OEID**          : Gene (See their ID in .cfg file) to be overexpressed. (follow by -OEFD)<br />

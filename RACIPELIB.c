@@ -1575,7 +1575,7 @@ for(int u=0;u<topoinfo->numG;u++){
     countstartmodels++;
 if((countstartmodels-1)%(simu_opts->num_paras/perc)==0){
 
-	printf("\r%d%% %fs",( (countstartmodels)/(simu_opts->num_paras/perc) )*(100/perc),omp_get_wtime()-begin);
+	printf("\r%d%% %.2fs",( (countstartmodels)/(simu_opts->num_paras/perc) )*(100/perc),omp_get_wtime()-begin);
 	fflush(stdout);
 	//printf("%d\n",(clock()-begin)/CLOCKS_PER_SEC);
 	//printf(" \r",

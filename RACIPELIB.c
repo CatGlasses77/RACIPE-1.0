@@ -2355,17 +2355,17 @@ void solve_ODE_rk45 (int j, struct opts *simu_opts, struct topo *topoinfo, struc
 
         flag = r4_rkf45 (model_ODE, topoinfo->numG, y, yp, tmprlt->paras, topoinfo, &t, t_out, &relerr, abserr, flag );
 
-		// testdelta = sumdelta(y, ytmp, topoinfo->numG);
-		// if(testdelta<=1e-7){
-		// 	break;
-		// }
-        // printf ( "%4d  %12f\n", flag, t);
+		testdelta = sumdelta(y, ytmp, topoinfo->numG);
+		if(testdelta<=1e-7 && flag != 3){
+			break;
+		}
+        //printf ( "%4d  %12f\n", flag, t);
 
         // if (i_step == n_step - 1) {
         //     printf ( "%4d  %12f  %12f  %12f\n", flag, t, y[0], y[1]);
         // }
     }
-     testdelta = sumdelta(y, ytmp, topoinfo->numG);
+     //testdelta = sumdelta(y, ytmp, topoinfo->numG);
     // printf ( "%4d  %12f  %12f  %12f\n", flag, t, y[0], y[1]);
 
 
